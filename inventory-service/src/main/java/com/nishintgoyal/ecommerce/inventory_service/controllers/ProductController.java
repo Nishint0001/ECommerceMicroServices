@@ -32,7 +32,7 @@ public class ProductController
 
      String response=restClient
                 .get()
-                .uri(orderService.getUri()+"/api/v1/orders/helloOrders")
+                .uri(orderService.getUri()+"/orders/core/helloOrders")
                 .retrieve()
                 .body(String.class);
 
