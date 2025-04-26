@@ -18,7 +18,7 @@ public class OrderEntity
     @Enumerated(EnumType.STRING)
     private OrderStatus orderStatus;
 
-    private Double price;
+    private Double totalPrice;
 
     @OneToMany(mappedBy ="order",cascade =CascadeType.ALL,orphanRemoval = true)
     private List<OrderItem> items;
